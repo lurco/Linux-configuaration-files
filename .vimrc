@@ -1,0 +1,43 @@
+"Use TAB to complete when typing words, else inserts TABs as usual.
+"Uses dictionary and source files to find matching words to complete.
+
+"See help completion for source,
+"Note: usual completion is on <C-n> but more trouble to press all the time.
+"Never type the same word twice and maybe learn a new spellings!
+"Use the Linux dictionary when spelling is in doubt.
+"Window users can copy the file to their machine.
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+:set dictionary="/usr/dict/words"
+
+"mapping F2 to :tabp and F3 to :tabn (in normal and  mode)
+:imap <F2> <Esc> :tabp <CR>
+:nmap <F2> :tabp <CR>
+
+:imap <F3> <Esc> :tabn <CR>
+:nmap <F3> :tabn <CR>
+
+:set ruler 	"counter in the down-right corner
+:set showcmd 	"until a full command/movement has been typed, the down-right corner shows, what was written so far
+:set incsearch 	"displays a partial search result and adaps while typing
+syntax on 	"syntax highlighting
+set hlsearch 					"search matching shows the last result 
+nnoremap <silent> <Esc> :nohlsearch<Return><Esc> 		
+nnoremap <Esc>^[ <Esc>^[
+"highlighting the last result will dissapear after pressing <ESC>
+filetype plugin indent on 			"automatic indenation to fit the line above
+autocmd FileType text setlocal textwidth=78 	"cutting the lines that go above 78 characters
+set nocompatible 				"set to noncompatibility mode (noncompatible with VI)
+packadd! matchit 				"load advanced mathing pair package (e.g. HTML tags)
+
+"Vim 'hardmode' - no arrows in command mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
