@@ -13,19 +13,19 @@ function! Tab_Or_Complete()
     return "\<Tab>"
   endif
 endfunction
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-:set dictionary="/usr/dict/words"
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+set dictionary="/usr/dict/words"
 
 "mapping F2 to :tabp and F3 to :tabn (in normal and  mode)
-:imap <F2> <Esc> :tabp <CR>
-:nmap <F2> :tabp <CR>
+imap <F2> <Esc> :tabp <CR>
+nmap <F2> :tabp <CR>
 
-:imap <F3> <Esc> :tabn <CR>
-:nmap <F3> :tabn <CR>
+imap <F3> <Esc> :tabn <CR>
+nmap <F3> :tabn <CR>
 
-:set ruler 	"counter in the down-right corner
-:set showcmd 	"until a full command/movement has been typed, the down-right corner shows, what was written so far
-:set incsearch 	"displays a partial search result and adaps while typing
+set ruler 	"counter in the down-right corner
+set showcmd 	"until a full command/movement has been typed, the down-right corner shows, what was written so far
+set incsearch 	"displays a partial search result and adaps while typing
 syntax on 	"syntax highlighting
 set hlsearch 					"search matching shows the last result 
 nnoremap <silent> <Esc> :nohlsearch<Return><Esc> 		
@@ -41,5 +41,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+set mouse=a
 execute pathogen#infect()
 "Pathogen plugin - makes adding plugins easier in terms of directory placement
