@@ -1,3 +1,5 @@
 [user]
 	email = andrzejlegutko@gmail.com
 	name = Andrzej Legutko
+[core]
+	editor = vim
