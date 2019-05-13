@@ -34,7 +34,10 @@ nnoremap <Esc>^[ <Esc>^[
 filetype plugin indent on 			"automatic indenation to fit the line above
 autocmd FileType text setlocal textwidth=78 	"cutting the lines that go above 78 characters
 set nocompatible 				"set to noncompatibility mode (noncompatible with VI)
-packadd! matchit 				"load advanced mathing pair package (e.g. HTML tags)
+packadd! matchit 				"load advanced matching pair package (e.g. HTML tags)
+"Colorscheme best for WSL on Windows
+"set background=dark
+"colorscheme pablo
 
 "Vim 'hardmode' - no arrows in command mode
 noremap <Up> <NOP>
