@@ -2707,3 +2707,7 @@ git_home push
 git_home push -u origin git@github.com:lurco/Linux-configuaration-files.git
 git_home status
 hstr -- 
+rm .bash_history && git_home checkout master
+mv .gc .gitconfig
+ls -la
+git_home status
