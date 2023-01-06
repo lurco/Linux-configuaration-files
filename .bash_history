@@ -2670,3 +2670,15 @@ git_home rm .lesshst
 git_home rm --cached .lesshst 
 git_home status
 git_home -am 'removes .lesshst from repo'
+rm .bash_history && git_home checkout new_config
+git_home merge -s ours master --allow-unrelated-histories
+git config list
+git_home config list
+git_home config --list
+git_home config --local user.email "andrzejlegutko@gmail.com"
+git_home config --local user.name "Andrzej Legutko"
+git_home merge -s ours master --allow-unrelated-histories
+ls -la
+vim .vimrc 
+git status
+git_home status
