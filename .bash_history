@@ -2682,3 +2682,28 @@ ls -la
 vim .vimrc 
 git status
 git_home status
+rm .bash_history && git_home merge new_config
+ls -la
+git push
+git_home push
+git config --list
+git config --list
+exit
+exit
+git config --list
+git config --global --edit
+git config --global core.editor "vim"
+git config --global --edit
+git config --list --show-origin
+vim bash_exercises/
+cd bash_exercises/
+vim list.txt 
+cd ..
+ls lilypond_exercises/
+rm lilypond_exercises/output 
+git_home config --local edit
+git_home config --local --edit
+git_home push
+git_home push -u origin git@github.com:lurco/Linux-configuaration-files.git
+git_home status
+hstr -- 
