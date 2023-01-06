@@ -62,6 +62,7 @@ Plugin 'KabbAmine/zeavim.vim' " Zeal (Dash the API documentation browser for Mac
 Plugin 'craigemery/vim-autotag' " Automatically discover and 'properly' update ctags files on save
 "Plugin 'garbas/vim-snipmate' " :SnipMateOpenSnippetFiles and see doc/SnipMate.txt to learn all SnipMate
 Plugin 'mattn/emmet-vim' " Default: g:user_leader_key = <C-Y>
+Plugin 'godlygeek/tabular' " required plugin for vim markdown
 Plugin 'plasticboy/vim-markdown'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ap/vim-css-color'
@@ -140,6 +141,7 @@ endif
 
 " Open current file in a new vertical split with '='
 nnoremap = :vsplit<cr>
+" F2 and F3 to move between tabs
 map <F2> <ESC>:tabp<CR>
 map <F3> <ESC>:tabn<CR>
 

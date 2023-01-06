@@ -2,3 +2,5 @@
 .andrz
 **/.git
 **/*/**
+!.github/
+!.github/*

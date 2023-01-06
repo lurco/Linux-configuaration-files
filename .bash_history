@@ -366,7 +366,7 @@ git checkout master
 git merge A_002_CREATE_CAR 
 git status
 git push
-git checkout -b 'A_003_ANIMATION
+git checkout -b 'A_003_ANIMATION'
 
 git checkout -b 'A_003_ANIMATION'
 git status
@@ -701,7 +701,7 @@ git merge AT-001_boilerplate
 git push
 git checkout -b AT-002_globals
 git push -u origin AT-002_globals 
-cd assets/scss/partials/`
+cd assets/scss/partials/
 
 cd assets/scss/partials/
 touch variables.scss
@@ -2711,3 +2711,69 @@ rm .bash_history && git_home checkout master
 mv .gc .gitconfig
 ls -la
 git_home status
+git_home add .bash_history && git_home commit -m 'renamed branches to push new config'
+git push
+git_home push
+git_home push -u origin master
+ls -la
+vim .vimrc 
+vim .vimrc 
+vim README.MD
+vim .vimrc 
+vim README.MD
+vim README.MD
+vim .vimrc 
+vim README.MD
+vim README.MD
+ls -la
+cd .vim
+ls -l
+ls -la
+cd bundle/
+cd vim-markdown/
+cd syntax/
+vim markdown.vim 
+cd ..
+cd ..
+vim
+cd ~
+vim README.MD 
+mv README.MD readme.md
+vim readme.md 
+vim .vimrc 
+mv readme.md README.MD
+vim README.MD 
+hstr -- 
+mv README.MD readme.md
+vim readme.md 
+vim .vimrc 
+vim .vimrc 
+git status
+git_home status
+exit
+vim readme.md 
+vim readme.md 
+ls -la
+vim readme.md 
+git_home add readme.md 
+git_home status
+git_home add .bash* .vimrc 
+hstr -- 
+status
+hstr -- 
+git_home status
+git_home add .bash_history && git_home commit
+git_home rm --cashed readme.md 
+git_home rm --cached readme.md 
+vim readme.md 
+git_home status
+mkdir .github
+vim .gitignore 
+mv readme.md .github/
+git_home add .github/readme.md
+vim .gitignore 
+git_home add .github/readme.md
+hstr -- 
+hstr -- 
+git_home add .bash_history && git_home commit
+git_home add .gitignore 

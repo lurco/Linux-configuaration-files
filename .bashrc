@@ -142,3 +142,5 @@ alias mysudo='sudo -E env "PATH=$PATH"'
 # and with the working directory ~ that stores config files (or dotfiles) in
 # the $HOME such as .bashrc or .vimrc
 alias git_home='git --git-dir=/home/al/.config_repo --work-tree=/home/al'
+# ignore duplicates when saving in .bash_history
+export HISTCONTROL=ignoredups
