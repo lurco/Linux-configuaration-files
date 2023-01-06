@@ -2641,3 +2641,32 @@ git_home status -u > ./lilypond_exercises/output
 hstr -- 
 vim ~/lilypond_exercises/output 
 git_home status -u
+git_home add .bash_history .bashrc .gnuplot_history .lesshst .npmrc .profile .python_history .vimrc 
+git_home status
+git_home commit
+exit
+git status
+git_home status
+git_home remote add origin git@github.com:lurco/Linux-configuaration-files.git
+git_home push -u origin master
+git_home checkout -b old_config
+git_home checkout master
+git_home branch remove old_config
+git_home branch -a
+git_home branch -remove old_config
+git help branch
+git_home branch -d old_config
+git_home branch -d remove
+hstr -- 
+git_homehstr -- 
+hstr -- 
+git_home branch -a
+git_home checkout -b new_config
+git_home push -u origin new_config
+git status
+git_home status
+vim .lesshst 
+git_home rm .lesshst 
+git_home rm --cached .lesshst 
+git_home status
+git_home -am 'removes .lesshst from repo'
