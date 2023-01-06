@@ -2777,3 +2777,27 @@ hstr --
 hstr -- 
 git_home add .bash_history && git_home commit
 git_home add .gitignore 
+git_home add .bash_history && git_home commit
+git_home add .github/readme.md 
+vim .gitignore 
+git_home add .gitignore 
+git_home add .github/readme.md 
+vim .gitignore 
+git_home add .gitignore 
+git_home add .github/readme.md 
+git commit --amend
+git_home commit --amend
+git_home status
+git_home add .github/readme.md 
+vim .gitignore 
+hstr -- 
+git_home add .gitignore 
+hstr -- 
+git_home add .github/readme.md 
+hstr -- 
+git_home rm --cached readme.md 
+git_home rm --cached .github/readme.md 
+hstr -- 
+git_home commit --amend
+git_home add .github/readme.md 
+hstr -- 
