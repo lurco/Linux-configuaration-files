@@ -2801,3 +2801,69 @@ hstr --
 git_home commit --amend
 git_home add .github/readme.md 
 hstr -- 
+git_home add .bash_history && git_home commit
+git_home push
+git_home branch -D slave
+git_home push
+cd latex_docs/
+touch test.py
+vim test.py 
+mv test.py test.html
+vim test.html 
+vim ~/.vimrc 
+vim test.html 
+vim test.html 
+vim test.html 
+vim test.html 
+:vim ~/.vimrc
+vim ~/.vimrc
+sudo apt install build-essential cmake vim-nox python3-dev
+sudo apt install mono-complete golang nodejs openjdk-17-jdk openjdk-17-jre npm
+sudo apt install mono-complete golang openjdk-17-jdk openjdk-17-jre
+sudo apt install update
+sudo apt update
+sudo apt upgrade 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+cd ~/.vim/bundle/YouCompleteMe/
+sudo python3 install.py --all
+python3 install.py --all
+python3 install.py --all --verbose
+apt install python3-dev
+sudo apt install python3-dev
+sudo apt install cmake
+sudo apt install vim-nox
+sudo apt install build-essential 
+sudo apt install mono-complete 
+sudo apt install golang
+sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jre
+python -v
+python --version
+python3 --version
+python3.5 --version
+hstr -- 
+python3.10 install.py --all
+hstr -- 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+cd ~/latex_docs/
+vim test.html 
+touch test.tex
+vim test.tex 
+vim test.tex 
+hstr -- 
+vim ~/.vimrc 
+hstr -- 
+vim test.tex 
+vim test.tex 
+vim test.tex 
+vim test.
+vim test.tex 
+tlmgr --gui
+cd ~
+vim .github/readme.md 
+git_home status

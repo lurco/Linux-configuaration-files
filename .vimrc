@@ -49,6 +49,11 @@ let g:ctrlp_working_path_mode = 0 " make ctrlp work from current dir
 Plugin 'vim-airline/vim-airline' " status / tabline customization
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'luochen1990/rainbow' " Rainbow parantheses
+Plugin 'matze/vim-move' " Visual movement of selected text
+" <A-k>   Move current line/selection up
+" <A-j>   Move current line/selection down
+" <A-h>   Move current character/selection left
+" <A-l>   Move current character/selection right
 " Simplify creating text objects in vim
 Plugin 'kana/vim-textobj-user'
 Plugin 'kana/vim-textobj-line'
@@ -60,8 +65,7 @@ Plugin 'joshdick/onedark.vim'   " Atom-style dark theme
 Plugin 'ReplaceWithRegister' " gr{motion}   Replace {motion} text with the contents of register x
 Plugin 'KabbAmine/zeavim.vim' " Zeal (Dash the API documentation browser for Macanalog for Linux)
 Plugin 'craigemery/vim-autotag' " Automatically discover and 'properly' update ctags files on save
-"Plugin 'garbas/vim-snipmate' " :SnipMateOpenSnippetFiles and see doc/SnipMate.txt to learn all SnipMate
-Plugin 'mattn/emmet-vim' " Default: g:user_leader_key = <C-Y>
+Plugin 'mattn/emmet-vim' " Default: g:user_leader_key = <C-y><,>
 Plugin 'godlygeek/tabular' " required plugin for vim markdown
 Plugin 'plasticboy/vim-markdown'
 Plugin 'hail2u/vim-css3-syntax'
@@ -69,20 +73,32 @@ Plugin 'ap/vim-css-color'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
+" Snippets, autocompletion etc.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'SirVer/ultisnips'
-
 " Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
-
-" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" Trigger configuration. You need to change this to something other than
+" <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-u>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'honza/vim-snippets'
+Plugin 'ckunte/latex-snippets-vim'
+"Plugin 'garbas/vim-snipmate' " :SnipMateOpenSnippetFiles and see doc/SnipMate.txt to learn all SnipMate
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"A HUGE plugin for completion suggestions. It needs to be COMPILED
+" and has several dependecies, so installation requires visiting its GitHub
+" page.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 " All of your Plugins must be added before the following line

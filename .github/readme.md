@@ -33,18 +33,50 @@ in turn was based on
 
 ## Further setup
 
+### Setting up vim
+
 After setting up the repo, it's important to run vim on the new .vimrc
 and run `:PluginInstall` option for [Vundle](https://github.com/VundleVim/Vundle.vim)
 one of the main vim package managers in order to install the other plugins.
 
-In order to run LaTeX, [lilypond](https://lilypond.org/),
-[PacVim](https://github.com/jmoon018/PacVim),
-[nvm](https://github.com/nvm-sh/nvm), Node.js and
-[npm](https://www.url.com), [Zeal](https://zealdocs.org/) (a Dash style 
-offline documentation browser), neofetch (a system info screen), 
-lame (the mp3 encoder), newest Python, then PIP and iPython,
-[Klavaro](https://klavaro.sourceforge.io/en/), gnuplot, Calibre,
-[hstr](https://github.com/dvorka/hstr) (smart bash autocompletion), ...
+Almost all packages are straight up github downloads through Vundle with the
+notable exception of
+[YouCompleteMe](https://github.com/ycm-core/YouCompleteMe#linux-64-bit),
+which requires a lot of dependencies and a python installation process AFTER
+downloading the Github resourses through Vundle in Vim.
+
+### Further setup
+
+List of packages to install:
+
+1. TexLive
+[TexLive](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/),
+
+2. [lilypond](https://lilypond.org/)
+
+3. [PacVim](https://github.com/jmoon018/PacVim)
+
+4. [nvm](https://github.com/nvm-sh/nvm), Node.js and
+[npm](https://www.url.com)
+
+5. [Zeal](https://zealdocs.org/) (a Dash style 
+offline documentation browser)
+
+6. neofetch (a system info screen)
+
+7. lame (the mp3 encoder)
+
+8. newest Python, then PIP and iPython
+
+9. [Klavaro](https://klavaro.sourceforge.io/en/)
+
+10. Gnuplot
+
+11. Calibre
+
+12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion),
+
+...
 
 
 ### Git configuration
