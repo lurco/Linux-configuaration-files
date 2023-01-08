@@ -83,8 +83,8 @@ offline documentation browser)
 Setup git config with:
 
 ```
-git_home config --local user.email ""
-git_home config --local user.name ""
+git config --global user.email ""
+git config --global user.name ""
 ```
 
 And generate an SSH key for Github access:
