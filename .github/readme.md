@@ -49,7 +49,7 @@ downloading the Github resourses through Vundle in Vim.
 
 List of packages to install:
 
-1. [TexLive](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/),
+1. [TexLive](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/)
 
 2. [lilypond](https://lilypond.org/)
 
