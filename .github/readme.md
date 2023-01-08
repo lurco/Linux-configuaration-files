@@ -73,7 +73,7 @@ offline documentation browser)
 
 11. Calibre
 
-12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion),
+12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion)
 
 ...
 
