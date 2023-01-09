@@ -2867,3 +2867,138 @@ tlmgr --gui
 cd ~
 vim .github/readme.md 
 git_home status
+git_home add .bash* .github/readme.md .python_history .vimrc
+git_home commit
+git push
+git_home push
+cd .vim/bundle/latex-snippets-vim/
+vim UltiSnips/
+cd UltiSnips/
+vim tex.snippets 
+cd ~/
+cd andrz/Dysk\ Google/Korepetycje/
+cd Jonasz\ Sobaniec/
+whereis web2c
+whereis texmf
+whereis texlive
+ls usr/local/texlive
+ls /usr/local/texlive
+whereis texmf.cnf
+vim wektory_uzupelnienie.tex 
+exit
+exit
+touch README.MD
+touch .gitignore
+git init
+git status
+git add .gitignore README.MD 
+git commit -am 'init'
+hstr -- 
+git config --global edit
+git config --global --edit
+git config --edit
+mkdir variables
+touch variables/variables.{js,md}
+rm -rf .git
+git init
+git config --edit
+git remote add git@github.com:lurco/js_notes.git
+git remote add origingit@github.com:lurco/js_notes.git
+git remote add origing it@github.com:lurco/js_notes.git
+git status
+git add .gitignore README.MD 
+git commit -m 'init'
+git config --global user.email "andrzejlegutko@gmail.com"
+git config --global user.name "Andrzej Legutko"
+git commit -m 'init'
+git push -u origin master
+hstr -- 
+git help remote
+git remote rename origing origin
+hstr -- 
+git push -u origin master
+git config --global --edit
+cd andrz/projects_web/
+cd travelian/
+git status
+vim bemtree.mmd 
+git add bemtree.mmd 
+git status
+git commit -am 'typo for a test'
+git push
+exit
+exit
+git status
+git config
+git config edit
+hstr -- 
+git push -u origin master
+git remote get-url 
+git remote get-url origin
+git remote update origin git@github.com:lurco/js_notes.git
+git remote remove origin
+git remote add origin git@github.com:lurco/js_notes.git
+hstr -- 
+git push -u origin master
+git status
+git add variables
+git status
+git commit -am 'creates variables section'
+git push
+mkdir control_flow
+touch control_flow/control_flow.{js, md}
+touch control_flow/control_flow.{js,md}
+touch index.html
+ulimit -d
+ulimit -s
+help ulimit 
+git status
+git add control_flow index.html 
+git commit -am 'adds control flow section and index.html'
+git push
+mkdir functions
+touch functions/functions.{js,md}
+cd \$HOME/andrz
+cd $HOME/andrz
+mv Desktop/Screenshot\ 2023-01-08\ at\ 14.22.41.png projects_web/js_notes
+cd projects_web/js_notes/
+git status
+git add functions
+git commit -am 'adds function section'
+git oush
+git push
+mkdir arrays
+touch arrays/arrays.{js,md}
+git status
+git add arrays
+git commit -am 'adds empty array section with practice functions'
+git push
+git status
+vim ~/.bashrc 
+exit
+cd /etc/fonts
+ls -la
+sudo vim local.conf
+history 10
+history 100
+fc-list
+fc-list | grep tex
+cd ~/latex_docs/
+vim test.html 
+rm test.html 
+vim test.tex 
+xelatex test.tex 
+mupdf test.pdf 
+help tlmgr
+man tlmgr
+tlmgr info xltxtra
+hstr -- 
+vim test.tex 
+xelatex test.tex 
+hstr -- 
+mupdf test.pdf 
+vim test.tex 
+vim test.tex 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
