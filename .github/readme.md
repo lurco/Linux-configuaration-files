@@ -49,8 +49,7 @@ downloading the Github resourses through Vundle in Vim.
 
 List of packages to install:
 
-1. TexLive
-[TexLive](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/),
+1. [TexLive](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/)
 
 2. [lilypond](https://lilypond.org/)
 
@@ -74,7 +73,7 @@ offline documentation browser)
 
 11. Calibre
 
-12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion),
+12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion)
 
 ...
 
@@ -84,8 +83,8 @@ offline documentation browser)
 Setup git config with:
 
 ```
-git_home config --local user.email ""
-git_home config --local user.name ""
+git config --global user.email ""
+git config --global user.name ""
 ```
 
 And generate an SSH key for Github access:
