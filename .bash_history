@@ -3002,3 +3002,10 @@ vim test.tex
 vim ~/.vimrc 
 vim ~/.vimrc 
 vim ~/.vimrc 
+git_home reset --hard HEAD
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
+vim ~/.vimrc 
