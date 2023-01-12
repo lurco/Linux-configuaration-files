@@ -21,6 +21,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+Plugin 'adelarsq/vim-matchit'
 Plugin 'tomtom/tlib_vim'
 " Some utility functions for VIM
 Plugin 'marcweber/vim-addon-mw-utils'
@@ -33,25 +34,36 @@ Plugin 'scrooloose/nerdtree'
 " A tree explorer plugin for vim
 Plugin 'roman/golden-ratio'
 " Automatic resizing of Vim windows to the golden ratio
-Plugin 'chiel92/vim-autoformat'
+" Plugin 'chiel92/vim-autoformat'
 " Provide easy code formatting in Vim by integrating existing code formatters
+" ! Needs extermal formatting programs to do anything !
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 " Toggle to absolute line number on inactive tabs
-Plugin 'townk/vim-autoclose'
+Plugin 'airblade/vim-gitgutter'
+" Gives symbols for git diff
+" Plugin 'townk/vim-autoclose'
 " Auto closes parentheses etc.
 Plugin 'alvan/vim-closetag'
 " Auto closes HTML tags
+" These are the file extensions where this plugin is enabled:
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
 Plugin 'michaeljsmith/vim-indent-object'
+" Text object (body of a function, sentence, paragraph etc.) but for
+" levels of indentation, good for languages like Python, SASS, Pug etc.
 " <count>ai 	An Indentation level and line above
 " <count>ii 	Inner Indentation level (no line above)
 " <count>aI 	An Indentation level and lines above/below
 " <count>iI 	Inner Indentation level (no lines above/below)
 Plugin 'christoomey/vim-sort-motion'
 " ability to sort in Vim using text objects and motions
+" type gs followed by a motion e.g.: 2j to sort down two lines
 Plugin 'tpope/vim-surround'
 " Allows commands in normal mode to manipulate
 " enclosing paranthesis, quotes, tags, etc. e.g. 'cs{[' changes {} to []
+" cs, ds, ys, and for visual mode S and type
+" the enclosion e.g. S} or S{ for { ... } (whitespace between)
 Plugin 'tpope/vim-commentary'
 " gc to comment out
 Plugin 'pangloss/vim-javascript'
@@ -63,6 +75,9 @@ let g:ctrlp_working_path_mode = 0
 Plugin 'vim-airline/vim-airline'
 " status / tabline customization
 Plugin 'vim-airline/vim-airline-themes'
+let g:airline_theme='minimalist'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_close_button = 0
 Plugin 'luochen1990/rainbow'
 " Rainbow parantheses
 Plugin 'matze/vim-move'
@@ -86,18 +101,21 @@ Plugin 'ReplaceWithRegister'
 " gr{motion}   Replace {motion} text with the contents of register x
 Plugin 'KabbAmine/zeavim.vim'
 " Zeal (Dash the API documentation browser for Macanalog for Linux)
+" <leader>z search for word under cursor
+" <leader><leader>z prompts what to search for and where
 Plugin 'craigemery/vim-autotag'
 " Automatically discover and 'properly' update ctags files on save
 Plugin 'mattn/emmet-vim'
 " default: g:user_leader_key = <C-y><,>
 Plugin 'godlygeek/tabular'
 " required plugin for vim markdown
-Plugin 'plasticboy/vim-markdown'
+" Plugin 'plasticboy/vim-markdown'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ap/vim-css-color'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
+Plugin 'lervag/vimtex'
 " Snippets, autocompletion etc.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -108,15 +126,17 @@ Plugin 'SirVer/ultisnips'
 " <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<c-u>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<C-Space>"
+let g:UltiSnipsJumpForwardTrigger="<C-Space>"
+let g:UltiSnipsJumpBackwardTrigger="<C-Left>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 Plugin 'ycm-core/YouCompleteMe'
+" let g:ycm_key_list_select_completion=[]
+" let g:ycm_key_list_previous_completion=[]
 Plugin 'honza/vim-snippets'
 Plugin 'ckunte/latex-snippets-vim'
-"Plugin 'garbas/vim-snipmate' " :SnipMateOpenSnippetFiles and see doc/SnipMate.txt to learn all SnipMate
+" Plugin 'garbas/vim-snipmate' " :SnipMateOpenSnippetFiles and see doc/SnipMate.txt to learn all SnipMate
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "A HUGE plugin for completion suggestions. It needs to be COMPILED
 " and has several dependecies, so installation requires visiting its GitHub
@@ -150,6 +170,7 @@ set colorcolumn=80
 " --------------------------------
 let g:mapleader = " " " Set leader to spacebar
 set spelllang=en_gb
+set spelllang+=pl
 set backspace=indent,eol,start " Backspace works on indents, EOLs etc.
 set number          " Line numbers
 set relativenumber  " Relative line numbers
@@ -225,3 +246,5 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+" Disable recording in normal mode (accidental q is annoying)
+nnoremap q <nop>

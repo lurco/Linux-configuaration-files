@@ -7,8 +7,9 @@
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-export HISTCONTROL=ignoreboth:erasedups
-export HISTIGNORE='clear:ls'
+export HISTCONTROL=ignoreboth
+export HISTIGNORE='ls:la:l:ll:hstr*'
+cat ~/.bash_history | sed 's/\s*$//' | awk '!x[$0]++' | sponge $HISTFILE
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -118,12 +119,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # HSTR configuration - add this to ~/.bashrc
-alias hh=hstr                    # hh to be alias for hstr
-export HSTR_CONFIG=hicolor       # get more colors
-shopt -s histappend              # append new history items to .bash_history
-export HISTCONTROL=ignorespace   # leading space hides commands from history
-export HISTFILESIZE=10000        # increase history file size (default is 500)
-export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
+alias hh=hstr                               # hh to be alias for hstr
+export HSTR_CONFIG=raw-history-view         # show history in order
+export HSTR_CONFIG=$HSTR_CONFIG:hicolor     # get more colors
+shopt -s histappend                         # append new history items to .bash_history
+export HISTCONTROL=ignorespace              # leading space hides commands from history
 # ensure synchronization between bash memory and history file
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
 # if this is interactive shell, then bind hstr to Ctrl-r (for Vi mode check doc)
@@ -134,8 +134,8 @@ bind '"\C-r": "\e^hstr -- \n"'
 export PATH=$PATH:/home/al/.local/bin
 # paths for a 2022 TeXlive manual installation
 export PATH=/usr/local/texlive/2022/bin/x86_64-linux${PATH:+:${PATH}}
-export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info${INFOPATH:+:${INFOPATH}}
-export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man${MANPATH:+:${MANPATH}}
+export INFOPATH="$INFOPATH:/usr/local/texlive/2022/texmf-dist/doc/info"
+export MANPATH="$MANPATH:/usr/local/texlive/2022/texmf-dist/doc/man"
 # alias for a command that makes sudo use user's PATH environmental variable in place of its own, limited one
 alias mysudo='sudo -E env "PATH=$PATH"'
 # git_home - an alias for git commands to manage the bare git repo in ~/.config_repo

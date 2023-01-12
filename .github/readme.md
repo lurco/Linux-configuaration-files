@@ -31,7 +31,7 @@ This entire scheme is taken from
 in turn was based on
 [this forum thread](https://news.ycombinator.com/item?id=11070797)).
 
-## Further setup
+## Beyond dotfiles
 
 ### Setting up vim
 
@@ -90,3 +90,16 @@ git config --global user.name ""
 And generate an SSH key for Github access:
 [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
+### LaTeX configuration
+
+tlmgr is the package manager for LaTeX, but it's location isn't in the PATH
+environmental variable for root, so `sudo tlmgr install ...` doesn't work.
+In order to add tlmgr to PATH use:
+
+```
+sudo visudo
+```
+
+and add the proper tlmgr path to the Defaults securepath variable. The
+file open in nano, so in order to save you have to press CTRL+X then y, then
+Enter... And they say exiting vim is difficult...
