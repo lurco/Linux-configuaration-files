@@ -9,7 +9,7 @@
 # See bash(1) for more options
 export HISTCONTROL=ignoreboth
 export HISTIGNORE='ls:la:l:ll:hstr*'
-cat ~/.bash_history | sed 's/\s*$//' | awk '!x[$0]++' | sponge $HISTFILE
+tac ~/.bash_history | sed 's/\s*$//' | awk '!x[$0]++'| tac | sponge $HISTFILE
 
 # append to the history file, don't overwrite it
 shopt -s histappend

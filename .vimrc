@@ -43,7 +43,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'airblade/vim-gitgutter'
 " Gives symbols for git diff
 " Plugin 'townk/vim-autoclose'
-" Auto closes parentheses etc.
+" Auto closes parentheses etc. but it conflicts with UltiSips or YCM
 Plugin 'alvan/vim-closetag'
 " Auto closes HTML tags
 " These are the file extensions where this plugin is enabled:
@@ -95,8 +95,9 @@ Plugin 'jiangmiao/auto-pairs'
 " automatically handles pairs of parentheses
 Plugin 'sheerun/vim-polyglot'
 " syntax highlighting in most languages
-Plugin 'joshdick/onedark.vim'
+" Plugin 'joshdick/onedark.vim'
 " Atom-style dark theme
+Plugin 'agude/vim-eldar'
 Plugin 'ReplaceWithRegister'
 " gr{motion}   Replace {motion} text with the contents of register x
 Plugin 'KabbAmine/zeavim.vim'
@@ -154,7 +155,7 @@ filetype plugin indent on
 " Pretty things
 " --------------------------------
 syntax on
-colorscheme onedark
+colorscheme eldar
 
 " Set Airline bar theme
 let g:airline_theme='bubblegum'

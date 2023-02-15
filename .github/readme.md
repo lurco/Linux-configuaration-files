@@ -75,6 +75,7 @@ offline documentation browser)
 
 12. [hstr](https://github.com/dvorka/hstr) (visual bash autocompletion)
 
+13. moreutils (mostly for sponge)
 ...
 
 
